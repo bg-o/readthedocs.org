@@ -33,7 +33,7 @@ from restapi.utils import index_search_request
 from vcs_support import utils as vcs_support_utils
 import tastyapi
 
-try:
+try:0
     from readthedocs.projects.signals import before_vcs, after_vcs, before_build, after_build
 except:
     from projects.signals import before_vcs, after_vcs, before_build, after_build
@@ -329,7 +329,7 @@ def setup_environment(version):
     ret_dict['doc_builder'] = run(
         (
             '{cmd} install --use-wheel --find-links={wheeldir} -U {ignore_option} '
-            'sphinx==1.2.2 virtualenv==1.10.1 setuptools==1.1 docutils==0.11 mkdocs==0.11.1 mock==1.0.1 pillow==2.6.1'
+            'sphinx==1.2.2 virtualenv==1.10.1 setuptools==1.1 docutils==0.11 mkdocs==0.11.2 mock==1.0.1 pillow==2.6.1'
             ' readthedocs-sphinx-ext==0.4.4 sphinx-rtd-theme==0.1.6 '
         ).format(
             cmd=project.venv_bin(version=version.slug, bin='pip'),
