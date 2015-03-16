@@ -81,5 +81,5 @@ git+https://github.com/ericholscher/readthedocs-sphinx-ext#egg=readthedocs_ext
 git+https://git@github.com/jMyles/bamboo_boy#egg=bamboo_boy
 
 # Latest mkdocs
-git+https://github.com/tomchristie/mkdocs.git#egg=mkdocs
+git+https://github.com/mrshoki/mkdocs.git#egg=mkdocs
 
